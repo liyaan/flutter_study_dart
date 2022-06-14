@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:study_dart/ArticlePage.dart';
+import 'package:study_dart/amin/AnimTweenWidget.dart';
+
+import 'amin/AnimWidget.dart';
+import 'amin/MyAnimatedWidget.dart';
+import 'amin/animatedwidget.dart';
+import 'amin/animatedwidget01.dart';
+import 'amin/hero.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,8 +21,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(title: Text("文章",style: const TextStyle(color: Colors.white),),),
-        body: ArticlePage(),
+        appBar: AppBar(
+          title: Text(
+            "文章",
+            style: const TextStyle(color: Colors.white),
+          ),
+        ),
+        body: HeroWidget(),
       ),
       //MyHomePage(title: 'Flutter Demo Home Page'),
     );
